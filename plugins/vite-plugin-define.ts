@@ -5,12 +5,6 @@ import { Plugin } from 'vite'
 
 type DefineData = Record<string, string | ((match: string, code: string, id: string) => string)>
 
-declare module "@vue/runtime-core" { 
-  interface ComponentCustomProperties {
-    __IS_MOBILE__: boolean;
-  }
-}
-
 export function vitePluginDefine(defineData: DefineData): Plugin {
   return {
     name: 'vite-define',
