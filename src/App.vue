@@ -4,7 +4,7 @@
  <div>{{demo}}</div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts" name="Main">
 let demo = computed(() => {
   return __IS_MOBILE__ ? '在script中使用移动端' : '在script中使用电脑端'
 })
