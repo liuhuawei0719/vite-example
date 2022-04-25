@@ -12,12 +12,13 @@
     "vue": "^3.2.33"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.1",
     "@types/node": "^16.6.0",
-    "typescript": "^4.5.5",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "eslint-define-config": "1.2.0",
     "ts-node": "^9.1.1",
+    "typescript": "^4.5.5",
+    "unplugin-auto-import": "^0.7.1",
     "vite": "^2.4.3",
-    "vue-tsc": "^0.29.8",
-    "eslint-define-config": "1.2.0"
+    "vue-tsc": "^0.29.8"
   }
 }

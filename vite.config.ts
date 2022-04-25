@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import AutoImport from 'unplugin-auto-import/vite'
 import { vitePluginDefine } from './plugins/vite-plugin-define'
 
 // https://vitejs.dev/config/
@@ -9,6 +10,10 @@ export default defineConfig(({mode}) => {
   return {
     plugins: [
       vue(),
+      AutoImport({
+        imports: ['vue'],
+        dts: './types/auto-imports.d.ts',
+      }),
       vitePluginDefine({
         __IS_MOBILE__
       })

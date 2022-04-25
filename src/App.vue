@@ -5,7 +5,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from '@vue/reactivity';
 let demo = computed(() => {
   return __IS_MOBILE__ ? '在script中使用移动端' : '在script中使用电脑端'
 })

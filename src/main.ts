@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import '../types/env'
 
-createApp(App)
+let app = createApp(App)
 
+app.mount('#app')
 declare global {
     const __IS_MOBILE__: boolean
   }
